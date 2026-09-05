@@ -15,16 +15,16 @@ and access it in the browser — simulating deployment of a storefront web app.
 ## Screenshots
 
 ### 1. Minikube cluster started
-![minikube start](screenshots/01-minikube-start.png)
+![minikube start](01-minikube-start.png)
 
 ### 2. Pod running
-![pod running](screenshots/02-pod-running.png)
+![pod running](02-pod-running.png)
 
 ### 3. Service exposed
-![service exposed](screenshots/03-service-exposed.png)
+![service exposed](03-service-exposed.png)
 
 ### 4. Nginx welcome page in browser
-![nginx welcome page](screenshots/04-nginx-browser.png)
+![nginx welcome page](04-nginx-browser.png)
 
 ## Outcome
 Successfully deployed and accessed nginx running inside a Kubernetes Pod, confirming 
