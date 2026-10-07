@@ -1,0 +1,21 @@
+#include <tunables/global>
+
+profile my-apparmor-profile flags=(attach_disconnected,mediate_deleted) {
+    #include <abstractions/base>
+
+    network,
+    capability,
+    file,
+
+    # Deny access to sensitive files
+    deny /etc/passwd r,
+    deny /etc/shadow r,
+    deny /var/** rw,
+
+    # Deny execution of binaries in /bin and /usr/bin
+    deny /bin/** mx,
+    deny /usr/bin/** mx,
+
+    # Capability restrictions
+    deny capability sys_admin,
+}
