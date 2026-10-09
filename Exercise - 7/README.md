@@ -8,13 +8,6 @@ Understand the idea of **Continuous Integration (CI)** and install **Jenkins**, 
 
 **Continuous Integration (CI)** is a development practice where developers integrate their code changes into a shared repository frequently. Every integration is verified by an automated build and automated tests, so errors are found early.
 
-| CI feature | What it means |
-|------------|---------------|
-| Frequent code integration | Developers commit to a shared repository several times a day |
-| Automated builds | Every commit triggers a build that verifies the change |
-| Automated testing | Unit and integration tests run as part of the build |
-| Immediate feedback | Developers quickly see whether their change succeeded or failed |
-
 Benefits: early bug detection, better collaboration, faster development cycles and higher code quality.
 
 How CI works: the developer pushes code to version control (for example Git), the CI server (for example Jenkins) detects the change and starts the build, the code is built and tested automatically, and the result is reported back to the developer.
